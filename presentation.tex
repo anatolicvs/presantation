@@ -1,0 +1,277 @@
+% $Header$
+
+% This file is a demonstration on how a seminar file should be
+% changed to make it work with beamer.
+
+
+% Copyright notice:
+
+% Except for the changes indicated by CHANGED, this file is the original
+% file texpower-0.0.9d/doc/seminardemo.tex, which is part of the
+% examples of the texpower package.
+
+
+
+% seminardemo.tex,v 1.2 2002/11/14 20:46:00 hansfn Exp
+%
+% TeXPower bundle - dynamic online presentations with LaTeX
+% Copyright (C) 1999-2002 Stephan Lehmke
+%
+% This program is free software; you can redistribute it and/or
+% modify it under the terms of the GNU General Public License
+% as published by the Free Software Foundation; either version 2
+% of the License, or (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+%-----------------------------------------------------------------------------------------------------------------
+% File: seminardemo.tex
+%
+% Simple examples the for combining the seminar class with the dynamic features provided by the package texpower.sty.
+%
+%-----------------------------------------------------------------------------------------------------------------
+% Autor: Stephan Lehmke <Stephan.Lehmke@cs.uni-dortmund.de>
+%
+% v0.0.1 Jun 02, 2000: First version for the pre-alpha release of TeXPower.
+%
+
+
+% CHANGED: commented
+%\documentclass{seminar}
+%
+%% We need fixseminar for setting the page size correctly.
+%
+%\usepackage{fixseminar}
+%
+%
+%%-----------------------------------------------------------------------------------------------------------------
+%% The texpower package is loaded.
+%% We give the display option so dynamic features are enabled.
+%%
+%\usepackage[display]{texpower}
+
+% CHANGED: Added
+\documentclass[slidestop,usepdftitle=false]{beamer}
+\usepackage[accumulated]{beamerseminar}
+\usepackage{beamertexpower}
+\usepackage{beamerthemeshadow}
+\usepackage{ragged2e}
+\usepackage{graphicx} % For including images
+
+\graphicspath{{./Images/}} % Specifies the directory where pictures are stored
+
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight}
+
+\newenvironment{list1}{
+  \begin{list}{\ding{120}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.20in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+
+% CHANGED: Moved \title and \author outside of slide
+\title{{\normalfont Artificial Intelligence in Cyber Security of Cloud Based Systems: Detection, Repair and Defense}}
+\author[Aytaç Özkan]{Aytaç Özkan\\\code{mailto:Aytac.Ozkan@inra.fr}}
+
+\begin{document}
+\begin{slide}
+
+\maketitle
+
+\newslide
+
+\tableofcontents
+\end{slide}
+
+% CHANGED: Added \frame, moved \section out, added \frametitle
+\section{About me}
+\frame{
+\begin{slide}
+\centerslidesfalse
+\frametitle{About me}
+
+% The \pause command `splits' the current page at the place it appears, producing two pages, one with everything which
+% came before the \pause command, one containing this and additionally the stuff coming after \pause. When these pages
+% are presented with acrobar reader in full screen mode (or any other viewer with this capability), the presentation
+% will appear to `stop' at the point the \pause command was issued and `resume' in the moment the presenter switches to
+% the next page.
+
+{\bf Universite // Paris Seine, École internationale des sciences du traitement de l'information}, Cergy, France
+% {\em Faculty of Engineering}
+ \vspace*{0.0in}
+ \begin{list1}
+ \item[] M.S., Big Data,  July, 2019
+ \begin{list2}
+ \item Dissertation Topic:  ``Improving data quality for big data using advanced analytics''
+ \item Advisor: Prof. Rachid Chelouah
+ \end{list2}
+ \end{list1}
+
+{\bf Marmara University}, Istanbul, Turquie\\
+%{\em Department of Mathematics and Statistics}
+\vspace*{0.0in}
+\begin{list1}
+\item[] M.S., Information Systems and Engineering,  May, 2017
+\end{list1}
+
+{\bf Professional Experience} \\
+{Institut national de la recherche agronomique}, Avignon, France
+
+{\em Research Software Engineer} \hfill {May, 2019 - present}\\
+Developing machine learning supported semantic search platform for bioinformatic data systems.
+\end{slide}
+}
+\frame{
+\begin{slide}
+\frametitle{Ultra Marathon}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{erciyes_2}
+\caption{Erciyes Ultra Sky Trail}
+\end{figure}
+\end{slide}
+}
+
+% CHANGED: Added \frame, moved \section out
+\section{Motivation}
+\frame{
+\begin{slide}
+\centerslidestrue
+\frametitle{Motivation}
+\justifying
+The speed of process and the amount of data to be used in defending the cyber space cannot be handled by humans without considerable automation at the cloud base systems.
+However, it is difficult to develop software with conventional fixed algorithms (hard-wired logic on decision making level)
+for effectively defending against the dynamically evolving attacks in networks. This situation can be handled by applying methods of artificial intelligence that provide flexibility
+and learning capability to software.
+
+Computer Security system providers are unable to provide timely security update. Most security systems are not designed to be adaptive to
+the increasing number of new threats. Companies lose considerable amount of time and resources when security attacks manifest themselves.
+
+\end{slide}
+}
+\frame{
+\begin{slide}
+\justifying
+As a answer to these problems this research is aimed at developing security systems capable of learning and updating themselves.
+The goal is to create security systems that will autonomously mature with expose to threats over time.
+To achieve this goal this research is proposing artificial intelligence based security systems with learning capability
+to perform intrusion, detection, repair and agnostics and defending network.
+\end{slide}
+}
+
+% CHANGED: Added \frame, moved \section out
+\section{AI: The next Frontier in IT Security}
+\frame{
+\begin{slide}
+  \justifying
+  \centerslidesfalse
+  \frametitle{AI: The next Frontier in IT Security}
+
+  \textit{AI} in cybersecurity is a set of capabilities that allows organizations to detect, predict and respond to cyber threats in real-time
+  using machine and deep learning.
+
+  \textbf{AI-enabled cybersecurity is increasingly necessary}, organizations face an urgent need to continually ramp up and improve their cybersecurity.
+    This is because the number of end user devices, networks and user interfaces continues to grow as a result of advances in cloud, the IoT,5G and conversational interfaces.
+    The increases the difficulty involved with administering a computer network. Having artificially intelligent network infrastructure that can learn to detect,
+    report and repair network security problems is an advantage to network administrators.
+\end{slide}
+}
+
+\frame{
+\begin{slide}
+    \justifying
+    \centerslidesfalse
+Adaptability is another key reason that brought AI and computer security close to each other. The malicious entities that generate computer security attacks have gained intelligence.
+The type of attacks evolved from a simple password guessing to a staged and distributed network attack that can be equipped with a stealth mode and attack that mutation.
+The compute security field has to adopt to rapid change and the evolution of security attacks. AI us well situated to answer this situation. AI is concerned with creating systems that evolve
+and react depending on the changes in the surrounding environment.
+
+\textit{Fighting the Unknown}. For many years, the efforts of the IT security industry were based on the assumptions
+that attacks were conducted on a large scale and major threats spread before arriving at a specific network or computer.
+Solutions were created on the basis of these assumptions and addressed as fellows.
+\end{slide}
+}
+\frame{
+\begin{slide}
+    \justifying
+    \centerslidesfalse
+    \textit{Internet of Things} In the past, most Internet interactions were interactions between humans that communicated via different platforms over the global network.
+Communications between humans, as the primary users of online communications will change dramatically with the evolution of the IoT realm ~\cite{Ko:2016:STU:2909066.2835492}.
+
+Most of the entities that will communicate on the Web in the future will be machines, and they will be used to initiate
+reports, make contact, or respond to requests. ~\cite{Komninos:2012}
+The means to facilitate this is characterized by easy access to the Web and the ability for mass distribution. For example, there is a possibility to turn households into smart homes with
+intercommunicative technology instead of investing in designing a supporting infrastructure.
+\end{slide}
+}
+
+\frame{
+\begin{slide}
+    \justifying
+    \centerslidestrue
+    Even scattering sensors along oil fields is the result of technological developments that led to a decrease in
+the price of materials, easy logistical operation, and resistant products that meet industrial standards. ~\cite{Chen:2017:DAI:3046067.3046227}
+The cyber world has barely begun to focus on new types of dangers such as the autonomous world, since this process has just started. However, the severity
+level of the threat is clear. In coming years, the cyber defense community will be called upon to develop
+new and effective technologies to meet the challenges posed by our changing and increasingly autonomous world.
+\end{slide}
+}
+
+
+
+% CHANGED: Added \frame, moved \section out
+\section{The Contribution of Intelligent Systems to Cyber Security}
+\frame{
+\begin{slide}
+\centerslidesfalse
+\frametitle{The Contribution of Intelligent Systems to Cyber Security}
+\justifying
+\centerslidesfalse
+Artificial intelligence (AI), which was officially established in the late 1950s by scholars such as Marvin Minsky, is used as a generic name representing a wide variety of
+methods, tools, and techniques that mimic “cognitive” functions or tasks that people
+associate with the human mind, such as “learning,” “planning,” “reasoning,” or “problem solving” ~\cite{Russell:1995}.
+The importance of AI in cyber security is twofold and related to two opposing directions. The first direction focuses on
+AI-controlled systems as potential targets of cyber attacks, mainly due to their increasing role in controlling vital and complex
+systems. There are numerous examples of cyber risks related to AI-controlled systems, such as smart vehicles ~\cite{Berger:2013:PLC:2489103.2514809}
+, smart grids and smart cities ~\cite{ALDAIRI20171086}.
+\end{slide}
+}
+
+\frame[allowframebreaks]{
+\begin{slide}
+\justifying
+\centerslidesfalse
+\textbf{Knowledge-based systems and machine learning methods} are two well-known classes of AI methods that contain valuable tools
+used in cyber security. In Knowledge-based systems, a huge amount of (experts') Knowledge is uploaded to the computer memory (thus, it is also called expert systems). ~\cite{Felgenbaum:1977:AAI:1622943.1623042}
+The learning part in these systems is based on the reasoning related to this large body of knowledge, which is often obtained  by programmed rules (such as "if-then" and "inference logic rules").
+
+Antivirus and antispam software packages ~\cite{Blanzieri:2008:SLT:1612711.1612715} represent straightforward
+implementations of expert systems in cyber security. In this case, expert knowledge
+(accumulated based on a large amount of transactions) regarding the procedures used—
+such as applied protocols, network traffic (e.g., HTTP, HTTPS, VoIP, or email), and I/O
+interactions with the operating system—is organized systematically to protect the
+users from cyber breaches. There are several papers in this issue that serve as good
+examples of such expert systems ~\cite{Maltinsky:2017:NNM:3055535.3040966}.
+\end{slide}
+}
+
+
+\begin{frame}[allowframebreaks]
+    \frametitle{References}
+    \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+    \bibliographystyle{amsalpha}
+    \bibliography{Preamble/Thesis_bibliography} % The references information are stored in the file named "Thesis_bibliography.bib"
+\end{frame}
+\end{document}
