@@ -6,7 +6,7 @@
   \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
 }
 \providecommand{\href}[2]{#2}
-\begin{thebibliography}{KKMK16}
+\begin{thebibliography}{AYHW03}
 
 \bibitem[AT17]{ALDAIRI20171086}
 Anwaar AlDairi and Lo’ai Tawalbeh, \emph{Cyber security attacks on smart
@@ -15,6 +15,13 @@ Anwaar AlDairi and Lo’ai Tawalbeh, \emph{Cyber security attacks on smart
   Systems, Networks and Technologies, ANT-2017 and the 7th International
   Conference on Sustainable Energy Information Technology, SEIT 2017, 16-19 May
   2017, Madeira, Portugal.
+
+\bibitem[AYHW03]{AGGARWAL200381}
+Charu~C. Aggarwal, Philip~S. Yu, Jiawei Han, and Jianyong Wang, \emph{- a
+  framework for clustering evolving data streams}, Proceedings 2003 VLDB
+  Conference (Johann-Christoph Freytag, Peter Lockemann, Serge Abiteboul,
+  Michael Carey, Patricia Selinger, and Andreas Heuer, eds.), Morgan Kaufmann,
+  San Francisco, 2003, pp.~81 -- 92.
 
 \bibitem[BB08]{Blanzieri:2008:SLT:1612711.1612715}
 Enrico Blanzieri and Anton Bryl, \emph{A survey of learning-based techniques of
@@ -25,17 +32,41 @@ Lars~Torsten Berger, Andreas Schwager, and J.~Joaqu\'{\i}n Escudero-Garz\'{a}s,
   \emph{Power line communications for smart grid applications}, JECE
   \textbf{2013} (2013), 3:3--3:3.
 
+\bibitem[BYG18]{BRUN2018458}
+Olivier Brun, Yonghua Yin, and Erol Gelenbe, \emph{Deep learning with dense
+  random neural network for detecting attacks against iot-connected home
+  environments}, Procedia Computer Science \textbf{134} (2018), 458 -- 463, The
+  15th International Conference on Mobile Systems and Pervasive Computing
+  (MobiSPC 2018) / The 13th International Conference on Future Networks and
+  Communications (FNC-2018) / Affiliated Workshops.
+
 \bibitem[CZW{\etalchar{+}}17]{Chen:2017:DAI:3046067.3046227}
 Xiaodao Chen, Dongmei Zhang, Lizhe Wang, Ning Jia, Zhijiang Kang, Yun Zhang,
   and Shiyan Hu, \emph{Design automation for interwell connectivity estimation
   in petroleum cyber-physical systems}, Trans. Comp.-Aided Des. Integ. Cir.
   Sys. \textbf{36} (2017), no.~2, 255--264.
 
+\bibitem[Dar17]{Darktrace2017}
+Darktrace, \emph{Darktrace stops emerging insider threat at battery plant},
+  \url{https://www.darktrace.com/en/press/2017/199/}, 2017, Accessed:
+  2019-08-31.
+
+\bibitem[DC18]{DIRO2018761}
+Abebe~Abeshu Diro and Naveen Chilamkurti, \emph{Distributed attack detection
+  scheme using deep learning approach for internet of things}, Future
+  Generation Computer Systems \textbf{82} (2018), 761 -- 768.
+
 \bibitem[Fel77]{Felgenbaum:1977:AAI:1622943.1623042}
 Edward~A. Felgenbaum, \emph{The art of artificial intelligence: Themes and case
   studies of knowledge engineering}, Proceedings of the 5th International Joint
   Conference on Artificial Intelligence - Volume 2 (San Francisco, CA, USA),
   IJCAI'77, Morgan Kaufmann Publishers Inc., 1977, pp.~1014--1029.
+
+\bibitem[Ins19]{Capgemini2019}
+Capgemini~Research Institute, \emph{Reinventing cybersecurity with artificial
+  intelligence the new frontier in digital security},
+  \url{https://www.mendeley.com/catalogue/reinventing-cybersecurity-artificial-intelligence/},
+  2019, Accessed: 2019-08-31.
 
 \bibitem[KKMK16]{Ko:2016:STU:2909066.2835492}
 In-Young Ko, Han-Gyu Ko, Angel~Jimenez Molina, and Jung-Hyun Kwon, \emph{Soiot:
@@ -47,13 +78,36 @@ Nicos Komninos, Marc Pallot, and Hans Schaffers, \emph{Special issue on smart
   cities and the future internet in europe}, Journal of the Knowledge Economy
   \textbf{4} (2012).
 
+\bibitem[LLLY18]{LiuLLY18}
+Xiao Liu, Yuxin Liu, Anfeng Liu, and Laurence~T. Yang, \emph{Defending on-off
+  attacks using light probing messages in smart sensors for industrial
+  communication systems.}, IEEE Trans. Industrial Informatics \textbf{14}
+  (2018), no.~9, 3801--3811.
+
 \bibitem[MGS17]{Maltinsky:2017:NNM:3055535.3040966}
 Alex Maltinsky, Ran Giladi, and Yuval Shavitt, \emph{On network neutrality
   measurements}, ACM Trans. Intell. Syst. Technol. \textbf{8} (2017), no.~4,
   56:1--56:22.
 
+\bibitem[PA18]{PahlA18}
+Marc-Oliver Pahl and Francois-Xavier Aubet, \emph{All eyes on you: Distributed
+  multi-dimensional iot microservice anomaly detection.}, CNSM (Stefano
+  Salsano, Roberto Riggio, Toufik Ahmed, Taghrid Samak, and Carlos
+  Raniery~Paula dos Santos, eds.), IEEE Computer Society, 2018, pp.~72--80.
+
+\bibitem[Res19]{GEResearch2019}
+GE~Research, \emph{Digital ghost: Real-time, active cyber defense},
+  \url{https://www.ge.com/research/offering/digital-ghost-real-time-active-cyber-defense},
+  2019, Accessed: 2019-08-31.
+
 \bibitem[RN95]{Russell:1995}
 S.~Russell and P.~Norvig, \emph{{Artificial Intelligence - A modern Approach}},
   Prentice Hall International Editions, Upper Saddle River, NJ, 1995.
+
+\bibitem[Sie18]{Siemens20118}
+Siemens, \emph{Siemens heightens industrial cyber security by detecting
+  anomalies},
+  \url{https://assets.new.siemens.com/siemens/assets/api/uuid:3f3c5e90-56c9-4a45-ac7f-b8d253a2de88/PR2018040235DFEN.pdf},
+  2018, Accessed: 2019-08-31.
 
 \end{thebibliography}
